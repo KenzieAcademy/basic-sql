@@ -1,0 +1,8 @@
+CREATE TABLE students (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NULL UNIQUE,
+  favorite_candy VARCHAR(100) NULL,
+  graduated BOOLEAN NOT NULL DEFAULT 'f',
+  cohort INTEGER NOT NULL
+);
